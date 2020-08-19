@@ -16,7 +16,7 @@ public class ScheduledTasks {
 
     @Scheduled(fixedRate = 2000)
     public void scheduleTaskWithFixedRate() {
-//        System.out.println("Fixed Rate Task :: Execution Time - {}" + dateTimeFormatter.format(LocalDateTime.now()));
+        System.out.println("Fixed Rate Task :: Execution Time - {}" + dateTimeFormatter.format(LocalDateTime.now()));
     }
 
     public void scheduleTaskWithFixedDelay() {}
@@ -25,6 +25,6 @@ public class ScheduledTasks {
 
     @Scheduled(cron = "0 * * * * ?")
     public void scheduleTaskWithCronExpression() {
-        System.out.println("Fixed Rate Task :: Execution Time - {}" + dateTimeFormatter.format(LocalDateTime.now()));
+        System.out.println("Cron Task :: Execution Time - {}" + dateTimeFormatter.format(LocalDateTime.now()));
     }
 }
