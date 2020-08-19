@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  scheduler-demo:
+    image: maven
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
